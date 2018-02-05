@@ -4,6 +4,10 @@
 
 /****************************************************/
 
+html {
+    overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -19,7 +23,7 @@ body {
 }
 
 section {
-    margin: 70px 0 0;
+    margin: 0 auto 70px;;
 }
 
 
@@ -35,15 +39,36 @@ h2 {
 
 }
 
-.navbar {
-    margin-top: 0;
+
+.center{
+    text-align: center;
 }
 
 /*
 .con{
     margin: 35px 0px;
 }
+
 */
+/****************************************************/
+
+/*Navbar*/
+
+/****************************************************/
+.navbar {
+    margin-top: 0;
+}
+.navbar-container{
+    padding: 5px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    list-style: none;
+    
+}
+
+
 
 /****************************************************/
 
@@ -52,9 +77,10 @@ h2 {
 /****************************************************/
 
 .landing-page {
+/*    max-height: 450px;*/
     margin-top: 0;
-    background-image: url(img/bg-1.jpg);
-    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(img/rail-2803725_960_720.jpg);
+    height: 100vh;
     background-position: center;
     background-size: cover;
     color: white;
@@ -65,12 +91,12 @@ h2 {
 }
 
 .landing-page h1 {
-    font-size: 400%;
+    font-size: 450%;
     text-shadow: 2px 2px #000;
 }
 
-.landing-page h3{
-    margin: 20px auto;
+.landing-page h3 {
+    margin: 40px auto;
 }
 
 /****************************************************/
@@ -93,9 +119,9 @@ h2 {
 
 .con-one {
     max-width: 100%;
-    background-color: #dfdfdf;
-/*    padding-bottom: 20px;*/
+    padding-bottom: 20px;
     text-align: center;
+    background-color: #dfdfdf;
 }
 
 .con-one img {
@@ -108,11 +134,12 @@ h2 {
 .con-one-text {
     /*    padding: 20px 20px 0;*/
     padding: 20px 20px 20px;
-    text-align: left;
+    text-align: center;
     word-spacing: 2px;
 }
 
 .con-one h2 {
+    /*    text-align: center;*/
     font-size: 200%;
     font-weight: 700px;
     letter-spacing: 2px;
@@ -166,11 +193,9 @@ h2 {
 
 /****************************************************/
 
-
-
 .con-two {
     max-width: 550px;
-    margin: 0 auto px;
+    margin: 0 auto;
     background-color: #dfdfdf;
 }
 
@@ -197,10 +222,11 @@ h2 {
 /*SECTION (CON) THREE*/
 
 /****************************************************/
-.section-three{
+
+.section-three {
     height: 315px;
     max-height: 100%;
-    margin-top: 70px;
+/*    margin-top: 70px;*/
     background-image: url(img/bg-2.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -208,32 +234,85 @@ h2 {
     color: white;
 }
 
-.section-three h3{
+.section-three h3 {
     margin-top: 0;
 }
-.con-three-text{
+
+.con-three-text {
     margin: 0 auto;
     padding: 75px 20px 0;
     text-align: center;
     align-content: center;
 }
-.con-three-text p{
+
+.con-three-text p {
     font-size: 120%;
 }
 
-.con-three-head{
+.con-three-head {
     font-size: 200%;
-    text-shadow: 3px  3px #5f5f5f;
+    text-shadow: 3px 3px #5f5f5f;
 }
 
 
 /****************************************************/
 
-/*SECTION (CON) Four*/
+/*SECTION (CON) Four Gallary*/
+
+/****************************************************/
+.con-four {
+    height: 500px;
+    background-color: #dfdfdf;
+    max-width: 100%;
+    margin: 0 1.25px;
+}
+
+.con-four-bottom {
+    padding: 20px 20px 0;;
+}
+.con-four-bottom button {
+   width: 100px;
+/*    color: */
+}
+
+.con-four-text {
+    padding-bottom: 20px;
+}
+
+.con-four img {
+    max-width: 100%;
+    border: none;
+}
+
 
 /****************************************************/
 
+/*FORM SECTION*/
 
+/****************************************************/
+
+.section-form{
+    float: none;
+}
+.label-right{
+    text-align: right;
+    padding-right: 0;
+}
+.label-right label{
+    margin: 2px 0;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 60%;
+    padding: 7px;
+    
+}
+.pad{
+    padding-bottom:15px;
+    border-radius: 
+}
 
 /****************************************************/
 
@@ -241,11 +320,24 @@ h2 {
 
 /****************************************************/
 
+/*Maximum Height 767 to Min Height 520px*/
+
 @media (max-width: 767px) {
     .con-one {
         max-width: 360px;
-        margin: 0 auto;
+        margin: 0 auto 20px;
     }
-    
+
+    .con-two {
+        margin-bottom: 20px;
+    }
+
 
 }
+
+/*Maximum Height 520px*/
+
+@media (max-width: 520px) {
+    .col-2xsm-12 {
+        width: 100%;
+    }
